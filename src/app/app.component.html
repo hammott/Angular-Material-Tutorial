@@ -239,6 +239,83 @@
 
 
 
+<br><br><br>
+
+<!-- GRID IN ANGULAR MATERIAL -->
+  <mat-grid-list cols="3" gutterSize="30px" rowHeight="100px">
+    <mat-grid-tile>1</mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+  </mat-grid-list>
+
+  <br><br>
+
+  <mat-grid-list cols="4" rowHeight="16:9">
+    <mat-grid-tile>2.1</mat-grid-tile>
+    <mat-grid-tile>2.2</mat-grid-tile>
+    <mat-grid-tile>2.3</mat-grid-tile>
+    <mat-grid-tile>2.4</mat-grid-tile>
+  </mat-grid-list>
+
+
+  <br><br><br>
+
+  <!-- Layout -->
+  <mat-grid-list cols="2" rowHeight="100px">
+    <mat-grid-tile colspan="2">Header</mat-grid-tile>
+    <mat-grid-tile colspan="2">Navigation</mat-grid-tile>
+    <mat-grid-tile>Content 1</mat-grid-tile>
+    <mat-grid-tile>Content 2</mat-grid-tile>
+    <mat-grid-tile colspan="2">Footer</mat-grid-tile>
+  </mat-grid-list>
+
+  <br><br>
+
+  <mat-grid-list cols="3" rowHeight="100px">
+    <mat-grid-tile colspan="3">Header</mat-grid-tile>
+    <mat-grid-tile colspan="3">Navigation</mat-grid-tile>
+    <mat-grid-tile>Content 1</mat-grid-tile>
+    <mat-grid-tile>Content 2</mat-grid-tile>
+    <mat-grid-tile>Content 3</mat-grid-tile>
+    <mat-grid-tile colspan="3">Footer</mat-grid-tile>
+  </mat-grid-list>
+
+  <br><br><br>
+
+  
+  <!-- Angular Material Toolbar -->
+  <mat-toolbar color="primary">The Title</mat-toolbar>
+  <br>
+  <mat-toolbar color="accent">
+    <mat-toolbar-row>
+      The First Title Row
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      The Second Title Row
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <br><br><br>
+
+
+  <!-- Menu In Angular Material -->
+  <button [matMenuTriggerFor]="menu" mat-button>Open Menu</button>
+  <br><br><br>
+  <mat-menu #menu="matMenu" yPosition="below" xPosition="after">
+    <button mat-menu-item>First Item Menu</button>
+    <button mat-menu-item>Second Item</button>
+    <button mat-menu-item>Third Item</button>
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">Forth Item</button>
+  </mat-menu>
+
+
+  <mat-menu #subMenu="matMenu">
+    <button mat-menu-item>Forth Item 1</button>
+    <button mat-menu-item>Forth Item 2</button>
+    <button mat-menu-item>Forth Item 3</button>
+  </mat-menu>
+
 
   <br>
   

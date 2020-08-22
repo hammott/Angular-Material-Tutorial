@@ -18,6 +18,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent
@@ -40,7 +43,10 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatExpansionModule,
     MatListModule,
     MatStepperModule,
-    MatTabsModule
+    MatTabsModule,
+    MatGridListModule,
+    MatToolbarModule,
+    MatMenuModule
     
   ],
   providers: [],
