@@ -1,0 +1,258 @@
+<div class="container">
+  
+  <h1 class="mat-display-1">The Main Angular Material</h1>
+  <h1 class="mat-display-2">Second Main Angular Material</h1>
+  <h1 class="mat-display-3">Third Main Angular Material</h1>
+
+  <button mat-button color="warn">Click Me!</button><br><br>
+  <button mat-button color="primary">Click to second button</button><br><br>
+  <button mat-raised-button color="primary">Click to second button</button><br><br>
+  <button mat-flat-button color="primary">Click to second button</button><br><br>
+  <button mat-stroked-button color="primary">Click to second button</button><br><br>
+  <button mat-icon-button color="primary">Click to second button</button><br><br>
+  <button mat-fab color="primary">Click Me</button><br><br>
+  <button mat-mini-fab color="primary">Click Me</button><br><br>
+
+  <mat-button-toggle-group appearance="lagacy" vertical name="toggle_data" multiple>
+    <mat-button-toggle value="1st_button">Click Here</mat-button-toggle>
+    <mat-button-toggle value="2st_button">Click Here Please</mat-button-toggle>
+    <mat-button-toggle value="3st_button">here Please</mat-button-toggle>
+  </mat-button-toggle-group>
+  <br>
+  <br>
+  <br>
+  <br>
+  <mat-button-toggle-group name="toggle_data">
+    <mat-button-toggle value="1st_button">Click Here</mat-button-toggle>
+    <mat-button-toggle value="2st_button">Click Here Please</mat-button-toggle>
+    <mat-button-toggle value="3st_button">here Please</mat-button-toggle>
+  </mat-button-toggle-group>
+  <br>
+  <br>
+  <br>
+
+  <div style="padding:15px">
+    <span matBadge="8" matBadgeOverlap="false">Some Text</span>
+    <br>
+    <br>
+    <button mat-raised-button matBadge="12">the Button</button>
+    <br>
+    <br>
+    <button mat-raised-button color="accent"
+            matBadge="3" 
+            matBadgeColor="primary" 
+            matBadgePosition="before"
+            matBadgeOverlap="true">the Button
+    </button><br><br>
+    <span matBadge="14"
+          matBadgePosition="below"
+          matBadgeOverlap="false">Notification
+    </span><br><br>
+
+    <span matBadge="10"
+          matBadgePosition="above before"
+          matBadgeOverlap="false">Notification
+    </span>
+
+  </div>
+  <br>
+  <br>
+
+  <mat-chip-list>
+    <mat-chip disabled color="accent" selected>1st Chip</mat-chip>
+    <mat-chip color="primary" selected>2st Chip</mat-chip>
+    <mat-chip>3st Chip</mat-chip>
+    <mat-chip disabled>4st Chip</mat-chip>
+    <mat-basic-chip>5st Chip</mat-basic-chip>
+  </mat-chip-list>
+
+
+
+  <br>
+
+  <mat-icon>home</mat-icon><br><br>
+  <mat-icon color="warn">face</mat-icon><br><br>
+
+
+  <mat-spinner></mat-spinner><br><br>
+  <mat-progress-spinner value="50"></mat-progress-spinner> <br> <br>
+  <mat-progress-spinner value="25"></mat-progress-spinner> <br> <br>
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+
+
+  <br><br>
+
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar><br><br>
+  <mat-progress-bar mode="determinate" value="40" color="warn"></mat-progress-bar><br><br>
+  <mat-progress-bar mode="buffer" ></mat-progress-bar><br><br>
+  <mat-progress-bar mode="query" ></mat-progress-bar><br><br>
+
+
+  <div class="card-class">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>Hamid Mottaghian</mat-card-title>
+          <mat-card-subtitle> A Web Developer </mat-card-subtitle>
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Some Dummy Text For The Card</p>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <button mat-raised-button>Share</button>
+        <button mat-raised-button>Close </button>
+      </mat-card-actions>
+
+      <mat-card-footer>
+        The Card Footer
+      </mat-card-footer>
+    </mat-card><br><br>
+  </div>
+
+  <br>
+  <br>
+
+  <p>Some Text Is Here</p>
+  <mat-divider></mat-divider>
+  <p>Some Text Is Here</p>
+  <mat-divider></mat-divider>
+  <p>Some Text Is Here</p>
+  <mat-divider></mat-divider>
+
+  <br><br>
+
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>The Expansion Title</mat-panel-title>
+        <mat-panel-description>
+          Hi, This is panel description
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the expansion description which we will see upon expansion</p>
+      <mat-action-row>
+        <button mat-button>Click Here</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>The second title</mat-panel-title>
+        <mat-panel-description>The second Description</mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>Some Basic Text</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+
+
+  <br><br><br>
+
+  <mat-list>
+    <mat-list-item>Milk</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>Tea</mat-list-item>
+    <mat-list-item>Coffee</mat-list-item>
+    <mat-list-item>Water</mat-list-item>
+  </mat-list>
+
+  <br><br>
+  <mat-nav-list>
+    <a mat-list-item >Item 1</a>
+    <a mat-list-item>Item 2</a>
+  </mat-nav-list>
+  <br><br>
+
+  <mat-action-list>
+    <button mat-button>Click Me</button>
+    <button mat-button>Click Me Please</button>
+  </mat-action-list>
+
+  <br><br>
+
+
+
+  <mat-selection-list>
+    <mat-list-option>Option 1</mat-list-option>
+    <mat-list-option>Option 2</mat-list-option>
+  </mat-selection-list>
+
+
+  <br><br><br>
+
+<!-- STEB HORIZONTAL -->
+  <mat-horizontal-stepper>
+    <mat-step label="Step 1">
+      <p>The Step 1</p>
+      <button mat-button matStepperNext>Next</button>
+    </mat-step>
+    <mat-step label="Step 2">
+      <p>The Step 2</p>
+      <button mat-button matStepperPrevious>Previous</button>
+      <button mat-button matStepperNext>Next</button>
+    </mat-step>
+    <mat-step label="Step 3">
+      <p>The Step 3</p>
+      <button mat-button matStepperPrevious>Previous</button>
+    </mat-step>
+  </mat-horizontal-stepper>
+
+
+  <br><br>
+
+  <!-- STEB VERTICAL -->
+  <mat-vertical-stepper>
+    <mat-step label="Step 1">
+      <p>The Step 1</p>
+      <button mat-button matStepperNext>Next</button>
+    </mat-step>
+    <mat-step label="Step 2">
+      <p>The Step 2</p>
+      <button mat-button matStepperPrevious>Previous</button>
+      <button mat-button matStepperNext>Next</button>
+    </mat-step>
+    <mat-step label="Step 3">
+      <p>The Step 3</p>
+      <button mat-button matStepperPrevious>Previous</button>
+    </mat-step>
+  </mat-vertical-stepper>
+
+
+  <br><br><br>
+
+
+  <!-- TAB -->
+  <mat-tab-group mat-align-tabs="center" animationDuration="1000ms">
+    <mat-tab label="Tab 1">
+      <p>Some Dummy Data Tab 1</p>
+    </mat-tab>
+    <mat-tab label="Tab 2">
+      <p>Some Dummy Data Tab 2</p>
+    </mat-tab>
+    <mat-tab label="Tab 3">
+      <p>Some Dummy Data Tab 3</p>
+    </mat-tab>
+  </mat-tab-group>
+
+
+
+
+
+  <br>
+  
+  <h1 class="mat-h1 mat-headline">Forth Main Angular Material</h1>
+  <h1 class="mat-h2 mat-title">Title</h1>
+  <h1 class="mat-h3 mat-subheading-1">Sub Heading</h1>
+  <h1 class="mat-h3 mat-subheading-2">Sub Heading 2</h1>
+
+  <h1 class="mat-body mat-body-1">Body</h1>
+  <h1 class="mat-body-strong mat-body-2">Body</h1>
+
+  <div>
+    <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+  </div>
+
+
+</div>
