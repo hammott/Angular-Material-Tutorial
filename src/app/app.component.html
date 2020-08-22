@@ -316,6 +316,82 @@
     <button mat-menu-item>Forth Item 3</button>
   </mat-menu>
 
+  <br><br><br>
+
+  <!-- Advanced Angular Material -->
+
+  <mat-sidenav-container>
+    <mat-sidenav mode="over" closed  #sideNav>The Side Nav 1</mat-sidenav>
+    <mat-sidenav mode="push" closed position="end" #sideNavEnd>The Side Nav 2</mat-sidenav>
+    <!-- <mat-sidenav mode="side" closed position="end" #sideNavEnd>The Side Nav 2</mat-sidenav> -->
+
+    <div>
+      <p></p>
+      <button mat-button (click)="sideNav.toggle()">Toggle The Sidenav</button>
+      <button mat-button (click)="sideNavEnd.toggle()">Toggle right One</button>
+    </div>
+  </mat-sidenav-container>
+
+
+  <br><br><br>
+
+  <!-- Sidedrawer in Angular Material -->
+  <mat-drawer-container>
+    <mat-drawer mode="side" opened #sidedrawer>The Side Drawer</mat-drawer>
+    <mat-drawer-content>The Main Drawer Contant
+        <button mat-button #sideDrawer (click)="sidedrawer.toggle()">Toggle side drawer</button>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  <br><br>
+
+  <mat-drawer-container>
+    <mat-drawer mode="over" closed #sidedrawer1>The Side Drawer</mat-drawer>
+    <mat-drawer-content>The Main Drawer Contant
+        <button mat-button #sideDrawer1 (click)="sidedrawer1.toggle()">Toggle side drawer</button>
+    </mat-drawer-content>
+  </mat-drawer-container>
+
+  <br><br><br>
+
+
+  <!-- Paginator In Angular Material -->
+  <mat-paginator  [length]="100" 
+                  [pageSize]="20"
+                  [pageSizeOptions]="[5,10,20,50,100]">
+
+  </mat-paginator>
+
+
+
+  <br><br><br>
+
+
+  <!-- Table In Angular Material -->
+  <table mat-table [dataSource]="table_data">
+    
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Student Name</th>
+      <td mat-cell *matCellDef="let student">{{student.name}}</td>
+    </ng-container>
+    
+    <ng-container matColumnDef="subject">
+      <th mat-header-cell *matHeaderCellDef>Student Subject</th>
+      <td mat-cell *matCellDef="let student">{{student.subject}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="rollNo">
+      <th mat-header-cell *matHeaderCellDef>Student Roll Number</th>
+      <td mat-cell *matCellDef="let student">{{student.rollNo}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="age">
+      <th mat-header-cell *matHeaderCellDef>Student Age</th>
+      <td mat-cell *matCellDef="let student">{{student.age}}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="col_names"></tr>
+    <tr mat-row *matRowDef="let row; columns:col_names; "></tr>
+  </table>
+
 
   <br>
   

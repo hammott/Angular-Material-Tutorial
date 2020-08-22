@@ -21,6 +21,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent
@@ -46,7 +49,10 @@ import {MatMenuModule} from '@angular/material/menu';
     MatTabsModule,
     MatGridListModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSidenavModule,
+    MatPaginatorModule,
+    MatTableModule
     
   ],
   providers: [],
